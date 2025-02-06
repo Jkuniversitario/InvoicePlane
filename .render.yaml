@@ -1,0 +1,9 @@
+services:
+  - name: invoiceplane
+    type: web
+    env: php
+    buildCommand: ""
+    startCommand: "php -S 0.0.0.0:8080 -t public"
+    envVars:
+      - key: PHP_VERSION
+        value: 8.0
